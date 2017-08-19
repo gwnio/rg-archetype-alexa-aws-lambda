@@ -43,8 +43,7 @@ Use maven to build java-core
 
 ### Update Alexa Skill Application Id
 
-To get your Alexa skill id, Go to Amazon Developer -> Alexa -> Alexa Skills Kit - Get Started -> select the link **View Skill ID**
-Go to **main.java.MainSpeechletRequestStreamHandler** and update the supported ids list in the class to contain you Alexa skill id.
+To get your Alexa skill id, Go to Amazon Developer -> Alexa -> Alexa Skills Kit - Get Started -> select the link **View Skill ID**.  Go to **main.java.MainSpeechletRequestStreamHandler** and update the supported ids list in the class to contain you Alexa skill id.
 
 ### Build jar
 
