@@ -1,0 +1,25 @@
+{
+  "intents": [
+    {
+      "intent": "Goodbye"
+    },
+    {
+      "intent": "Help"
+    },
+    {
+      "intent": "TodaysDate"
+    },
+    {
+      "intent": "AMAZON.NoIntent"
+    },
+    {
+      "intent": "AMAZON.YesIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    }
+  ]
+}
