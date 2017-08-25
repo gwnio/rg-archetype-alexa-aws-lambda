@@ -43,7 +43,7 @@ Use maven to build java-core
 
 ### Update Alexa Skill Application Id
 
-To get your Alexa skill id, Go to Amazon Developer -> Alexa -> Alexa Skills Kit - Get Started -> select the link **View Skill ID**.  Go to **main.java.MainSpeechletRequestStreamHandler** and update the supported ids list in the class to contain you Alexa skill id.
+To get your Alexa skill id, Go to Amazon Developer -> Alexa -> Alexa Skills Kit - Get Started -> select the link **View Skill ID**.  Go to **org.rg.archetype.lambda.alexa.MainSpeechletRequestStreamHandler** and update the supported ids list in the class to contain you Alexa skill id.
 
 ### Build jar
 
@@ -60,7 +60,7 @@ To get your Alexa skill id, Go to Amazon Developer -> Alexa -> Alexa Skills Kit 
 * On add trigger, choose **Alexa Skills Kit** and select **Next**
 * On configure function -> basic information - assign a name and for the runtime choose **Java 8**
 * On configure function -> Lambda function code - for the code, upload {rg-archetype-alexa-aws-lambda home}\target\rg-archetype-alexa-aws-lambda-1.0.jar
-* On configure function -> Lambda function handler and role - for the handler enter **main.java.MainSpeechletRequestStreamHandler**.  Note, if you had your java source code in a subpackage called, let's say, helloworld.  You would need to specifiy that in the path i.e. **main.java.helloworld.MainSpeechletRequestStreamHandler**
+* On configure function -> Lambda function handler and role - for the handler enter **org.rg.archetype.lambda.alexa.MainSpeechletRequestStreamHandler**.  Note, if you had your java source code in a subpackage called, let's say, helloworld.  You would need to specifiy that in the path i.e. **main.java.helloworld.MainSpeechletRequestStreamHandler**
 * On configure function -> Lambda function handler and role - for role, select **Create a custom role**, for IAM Role select **lambda_basic_excution** and choose **Allow**
 * On configure function -> Lambda function handler and role - for existing role, select **lambda_basic_excution**
 * Click **Next**

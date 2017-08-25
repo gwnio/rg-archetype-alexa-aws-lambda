@@ -1,4 +1,4 @@
-package main.java;
+package org.rg.archetype.lambda.alexa;
 
 public class Consts {
 

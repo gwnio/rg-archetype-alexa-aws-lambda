@@ -1,4 +1,4 @@
-package main.java;
+package org.rg.archetype.lambda.alexa;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

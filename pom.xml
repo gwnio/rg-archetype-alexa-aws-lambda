@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>rg-archetype-alexa-aws-lambda</groupId>
+  <groupId>org.rg.archetype.lambda</groupId>
   <artifactId>rg-archetype-alexa-aws-lambda</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>Alexa AWS Lambda Sample</name>
+  <name>Alexa AWS Lambda Alexa Sample</name>
 
   <dependencies>
     <dependency>
