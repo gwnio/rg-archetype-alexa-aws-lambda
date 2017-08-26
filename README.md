@@ -1,6 +1,6 @@
 
 
-# rg-archetype-alexa-aws-lambda
+# rg-archetype-aws-lambda-alexa-apiai
 
 Amazon AWS Lambda function that can be used as a endpoint for a Alexa skill and ApiAi.
 
@@ -65,7 +65,7 @@ To get your Alexa skill id, Go to Amazon Developer -> Alexa -> Alexa Skills Kit 
 ### Build jar
 
 ```
-> cd {rg-archetype-alexa-aws-lambda home}
+> cd {rg-archetype-aws-lambda-alexa-apiai home}
 > mvn assembly:assembly -DdescriptorId=jar-with-dependencies package
 or
 > mvn package
@@ -80,7 +80,7 @@ or
 * Skip selecting a blueprint and click **Author from scratch** button.
 * On add trigger, choose **Alexa Skills Kit** and select **Next**
 * On configure function -> basic information - assign a name and for the runtime choose **Java 8**
-* On configure function -> Lambda function code - for the code, upload {rg-archetype-alexa-aws-lambda home}\target\rg-archetype-aws-lambda-1.0.jar
+* On configure function -> Lambda function code - for the code, upload {rg-archetype-aws-lambda-alexa-apiai home}\target\rg-archetype-aws-lambda-1.0.jar
 * On configure function -> Lambda function handler and role - for the handler enter **org.rg.archetype.aws.lambda.alexa.MainSpeechletRequestStreamHandler**.
 * On configure function -> Lambda function handler and role - for role, select **Create a custom role**, for IAM Role select **lambda_basic_excution** and choose **Allow**
 * On configure function -> Lambda function handler and role - for existing role, select **lambda_basic_excution**
@@ -105,7 +105,7 @@ For 'Default', go to the AWS console and copy the ARN for the Lambda function yo
 * Skip selecting a blueprint and click **Author from scratch** button.
 * I did not add any triggers, select **Next**
 * On configure function -> basic information - assign a name and for the runtime choose **Java 8**
-* On configure function -> Lambda function code - for the code, upload {rg-archetype-alexa-aws-lambda home}\target\rg-archetype-aws-lambda-1.0.jar
+* On configure function -> Lambda function code - for the code, upload {rg-archetype-aws-lambda-alexa-apiai home}\target\rg-archetype-aws-lambda-1.0.jar
 * On configure function -> Lambda function handler and role - for the handler enter **org.rg.archetype.aws.lambda.apiai.MainRequestStreamHandler**.
 * On configure function -> Lambda function handler and role - for role, select **Create a custom role**, for IAM Role select **lambda_basic_excution** and choose **Allow**
 * On configure function -> Lambda function handler and role - for existing role, select **service-role/execute_my_lambda**
