@@ -2,11 +2,11 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.rg.archetype.lambda</groupId>
-  <artifactId>rg-archetype-alexa-aws-lambda</artifactId>
+  <groupId>org.rg.archetype.aws.lambda</groupId>
+  <artifactId>rg-archetype-aws-lambda</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>Alexa AWS Lambda Alexa Sample</name>
+  <name>AWS Lambda Sample</name>
 
   <dependencies>
     <dependency>
@@ -32,6 +32,16 @@
       <version>1.0.0</version>
       <scope>compile</scope>
     </dependency>
+    <dependency>
+		<groupId>ai.api</groupId>
+		<artifactId>libai</artifactId>
+		<version>1.6.12</version>
+	</dependency>
+	<dependency>
+		<groupId>com.google.code.gson</groupId>
+		<artifactId>gson</artifactId>
+		<version>2.8.1</version>
+	</dependency>
   </dependencies>
 
   <build>

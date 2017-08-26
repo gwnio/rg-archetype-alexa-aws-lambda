@@ -1,4 +1,4 @@
-package org.rg.archetype.lambda.alexa;
+package org.rg.archetype.aws.lambda.alexa;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package org.rg.archetype.lambda.alexa;
+package org.rg.archetype.aws.lambda.alexa;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,21 +46,21 @@ public class MainSpeechlet implements Speechlet {
 
 		IntentResponseMap responseMap = new IntentResponseMap();
 
-		if (intentName.equals(Consts.IntentName.AmazonNoIntent)) {
+		if (intentName.equals(ASConsts.IntentName.AmazonNoIntent)) {
 			return SpeechletUtils.getStopSpeechletResponse();
-		} else if (intentName.equals(Consts.IntentName.AmazonYesIntent)) {
-			return SpeechletUtils.getSpeechletResponse(responseMap.get(Consts.IntentName.Help));
-		} else if (intentName.equals(Consts.IntentName.AmazonStopIntent)) {
+		} else if (intentName.equals(ASConsts.IntentName.AmazonYesIntent)) {
+			return SpeechletUtils.getSpeechletResponse(responseMap.get(ASConsts.IntentName.Help));
+		} else if (intentName.equals(ASConsts.IntentName.AmazonStopIntent)) {
 			return SpeechletUtils.getStopSpeechletResponse();
 		}
-		if (intentName.equals(Consts.IntentName.AmazonCancelIntent)) {
+		if (intentName.equals(ASConsts.IntentName.AmazonCancelIntent)) {
 			return SpeechletUtils.getStopSpeechletResponse();
 		} else {
 			ResponseData data = responseMap.get(intentName);
 			if (data != null) {
 				return SpeechletUtils.getSpeechletResponse(responseMap.get(intentName));
 			} else {
-				return SpeechletUtils.getSpeechletResponse(Consts.UtteranceSpeechNotUnderstood, null, false);
+				return SpeechletUtils.getSpeechletResponse(ASConsts.UtteranceSpeechNotUnderstood, null, false);
 			}
 		}
 	}

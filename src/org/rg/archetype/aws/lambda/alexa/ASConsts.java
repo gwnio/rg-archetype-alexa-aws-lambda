@@ -1,6 +1,6 @@
-package org.rg.archetype.lambda.alexa;
+package org.rg.archetype.aws.lambda.alexa;
 
-public class Consts {
+public class ASConsts {
 
 	public static final String UtteranceSpeechNotUnderstood = "Sorry I didn't understand what I heard.";
 	
